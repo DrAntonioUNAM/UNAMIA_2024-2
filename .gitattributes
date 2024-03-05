@@ -1,0 +1,29 @@
+# Comandos básicos para .gitattributes que utilice un repositorio de MATLAB.
+#   Este template incluye extensiones de simulink principalmente ademas  
+#de las adiciones de extension en MATLAB
+
+# Especifica el manejo automático de finales de línea
+# ============
+* text=auto
+
+# Archivos fuente
+# ============
+*.m             text diff=matlab
+*.txt 		text
+*.mu            text diff=matlab
+
+# Archivos binarios
+# ============
+*.mlx		binary
+*.fig           binary
+*.mat           binary
+*.mdl           binary
+*.slx           binary
+*.mdlp          binary
+*.slxp          binary
+*.sldd          binary
+*.mltbx         binary
+*.mlappinstall  binary
+*.mlpkginstall  binary
+*.png 		binary
+*.jpg 		binary

@@ -1,0 +1,15 @@
+Un archivo .gitattributes es un archivo de configuración que se utiliza en repositorios Git para definir atributos de los archivos y directorios en el proyecto. Estos atributos pueden afectar la forma en que Git maneja ciertos archivos y operaciones
+
+Normalización de finales de línea: Puedes especificar cómo Git maneja los finales de línea en archivos de texto, lo cual es especialmente útil para proyectos colaborativos en entornos Windows y Unix/Linux/Mac
+
+# Especifica el manejo automático de finales de línea
+* text=auto
+
+# Trata todos los archivos .txt como texto y normaliza sus finales de línea
+*.txt text
+
+Gestión de diferencias y fusión: Puedes definir cómo Git genera diferencias (diffs) para ciertos tipos de archivos o especificar estrategias de fusión personalizadas para archivos específicos. 
+
+# Marca archivos específicos como binarios para evitar que se les aplique diff
+*.png binary
+*.jpg binary

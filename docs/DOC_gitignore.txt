@@ -1,0 +1,32 @@
+Un archivo .gitignore es un documento de texto utilizado por Git, el sistema de control de versiones, para determinar qué archivos y directorios deben ser ignorados al hacer seguimiento de cambios en un proyecto. Este archivo es crucial para evitar que archivos temporales, compilados, de configuración local u otros tipos de archivos no esenciales para el código fuente del proyecto sean añadidos al repositorio de Git.
+
+Esto ayuda a mantener limpio el repositorio, asegurando que solo los archivos necesarios sean versionados y compartidos con otros colaboradores.El archivo .gitignore tiene un formato simple, donde cada línea del archivo puede contener:
+
+*Un patrón para ignorar.
+*Un comentario, si la línea comienza con el símbolo #.
+*Una excepción a un patrón de ignorado, utilizando el símbolo de exclamación ! al inicio del patrón.
+
+---Se recomiendan los siguientes configuraciones de directorio
+
+--->para Python<---
+# Entornos virtuales de Python
+venv/
+.env
+
+# Archivos de registro
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+--->para MATLAB<---
+# Simulink code generation folders
+slprj/
+sccprj/
+
+# Simulink autosave extension
+*.autosave
+
+# Simulink cache files
+*.slxc
